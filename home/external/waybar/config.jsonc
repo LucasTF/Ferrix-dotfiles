@@ -1,0 +1,89 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top", // Waybar at top layer
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  "height": 32, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 4, // Gaps between modules (4px)
+  "margin-left": 10,
+  "margin-right": 10,
+  "margin-top": 10,
+  "reload_style_on_change": true,
+  // Choose the order of the modules
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-right": [
+    "disk",
+    "cpu",
+    "memory",
+    "backlight",
+    "network",
+    "pulseaudio",
+    "clock",
+    "tray",
+    "custom/notification"
+  ],
+  "mpris": {
+    "format": "{player-icon} {title} - {artist}",
+    "format-playing": "{player_icon}  {status_icon} {title} - {artist}",
+    "format-paused": "{player_icon}  {status_icon} {title} - {artist}",
+    "format-len": 20,
+    "player-icons": {
+      "default": "🎜",
+      "spotify": "",
+      "ncspot": "",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "playing": "",
+      "paused": "⏸"
+    }
+    // "ignored-players": ["firefox"]
+  },
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{:%d/%m/%Y - %H:%M}",
+    "tooltip-format": "<big>{:%d/%m/%Y}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "disk": {
+    "format": "󰋊 SSD: {used}/{total}"
+  },
+  "cpu": {
+    "format": " CPU: {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "interval": 20,
+    "format": " RAM: {used:0.1f}G/{total:0.1f}G",
+    "tooltip": false
+  },
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""]
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "󰈀",
+    "tooltip-format": "󰈀 {ipaddr}/{cidr} via {gwaddr}",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "󰈀",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    }
+  }
+}
