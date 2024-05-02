@@ -1,5 +1,4 @@
 <h1 align="center">
-  <br>
   <img src="https://files.artturin.com/files/nixoscolorful.svg" width="128" height="128" alt="Ferrix-NixOS" />
   <br>
   Ferrix

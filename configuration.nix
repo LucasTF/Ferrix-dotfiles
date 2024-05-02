@@ -99,6 +99,7 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
+    package = pkgs.hyprland;
   };
 
   # Display Manager
@@ -117,7 +118,6 @@
     isNormalUser = true;
     description = "Lucas Ferreira";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
   };
 
   # Fonts
@@ -129,6 +129,12 @@
     nerdfonts
   ];
 
+  # Desktop Portal
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gnome ];
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -138,20 +144,19 @@
   libsForQt5.sddm
   libsForQt5.qt5ct
   libsForQt5.dolphin
+  libsForQt5.breeze-icons
   libsForQt5.polkit-kde-agent
   libsForQt5.qt5.qtwayland
   nwg-look
   vim
   wget
   git
-  hyprland
   swww
   dunst
+  libnotify
   grim
   slurp
   wl-clipboard
-  xdg-desktop-portal-hyprland
-  xdg-desktop-portal-gnome
   udiskie
   udisks
   libnvme
