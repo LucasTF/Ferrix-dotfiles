@@ -21,6 +21,12 @@
     ".config/waybar".source = ./home/external/waybar;
   };
 
+  # ncspot
+  programs.ncspot = {
+    enable = true;
+    package = pkgs.ncspot;
+  };
+
   # Git
   programs.git = {
     enable = true;
