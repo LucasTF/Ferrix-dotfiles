@@ -12,6 +12,7 @@
   // Choose the order of the modules
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": [
+    "mpris",
     "disk",
     "cpu",
     "memory",
@@ -19,8 +20,7 @@
     "network",
     "pulseaudio",
     "clock",
-    "tray",
-    "custom/notification"
+    "tray"
   ],
   "mpris": {
     "format": "{player-icon} {title} - {artist}",
@@ -36,8 +36,8 @@
     "status-icons": {
       "playing": "",
       "paused": "⏸"
-    }
-    // "ignored-players": ["firefox"]
+    },
+    "ignored-players": ["firefox"]
   },
   "tray": {
     // "icon-size": 21,

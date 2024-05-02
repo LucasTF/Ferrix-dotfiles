@@ -37,6 +37,7 @@ button:hover {
 
 #workspaces button:hover {
   background: rgba(0, 0, 0, 0.2);
+  color: #2563eb;
 }
 
 #workspaces button.focused {
@@ -108,7 +109,6 @@ label:focus {
   background-color: #000000;
 }
 
-#mpris,
 #memory,
 #cpu,
 #disk,
@@ -119,6 +119,7 @@ label:focus {
 }
 
 #mpris {
+  font-size: 12px;
   color: #16a34a;
 }
 
