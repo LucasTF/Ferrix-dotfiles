@@ -111,6 +111,19 @@
     };
   };
 
+  # ZSH
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" ];
+      theme = "agnoster";
+    };
+  };
+
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
   # shell provided by Home Manager. If you don't want to manage your shell
@@ -127,8 +140,14 @@
   #
   #  /etc/profiles/per-user/lucas/etc/profile.d/hm-session-vars.sh
   #
+  home.shellAliases = {
+    neofetch = "fastfetch";
+  };
+    
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    BROWSER = "firefox";
+    EDITOR = "vscode";
+    TERMINAL = "alacritty";
   };
 
   # Let Home Manager install and manage itself.
