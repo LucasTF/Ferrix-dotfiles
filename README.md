@@ -10,13 +10,13 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Version-0.1.5-green") />
   <img src="https://img.shields.io/badge/nixpkgs-unstable-%237f7efe") />
-  <img src="https://img.shields.io/badge/Licence-MIT-blue") />
+  <img src="https://img.shields.io/badge/License-MIT-blue") />
 </p>
 
 <p align="center">
   <a href="#components">Components</a> •
   <a href="#installation">Installation</a> •
-  <a href="#licence">Licence</a>
+  <a href="#license">License</a>
 </p>
 
 ![Ferrix demo](/demo.png)
@@ -41,6 +41,6 @@ $ sudo nixos-rebuild switch --flake .
 $ home-manager switch --flake .
 ```
 
-## Licence
+## License
 
 MIT
