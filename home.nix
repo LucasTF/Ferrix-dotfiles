@@ -21,6 +21,13 @@
     ".config/waybar".source = ./home/external/waybar;
   };
 
+  # rofi
+  programs.rofi = {
+    enable = true;
+    package = pkgs.rofi-wayland;
+    terminal = "alacritty";
+  };
+
   # ncspot
   programs.ncspot = {
     enable = true;
@@ -60,7 +67,7 @@
         type = "Application";
         genericName = "Image Viewer";
         exec = "feh -.";
-        terminal = false;
+        terminal = true;
         categories = [ "Graphics" "Viewer" ];
         mimeType = [ "image/jpeg" "image/png" "image/gif" "image/svg+xml" "image/webp" "image/bmp" ];
       };

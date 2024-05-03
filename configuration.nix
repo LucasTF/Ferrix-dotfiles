@@ -151,7 +151,6 @@
   udisks
   libnvme
   waybar
-  rofi-wayland-unwrapped
   pamixer
   playerctl
   alacritty
