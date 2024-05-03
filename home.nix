@@ -28,6 +28,11 @@
     terminal = "alacritty";
   };
 
+  # C.A.V.A
+  programs.cava = {
+    enable = true;
+  };
+
   # ncspot
   programs.ncspot = {
     enable = true;

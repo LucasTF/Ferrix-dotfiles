@@ -8,7 +8,7 @@
 <h3 align="center">My personal NixOS configuration and dotfiles</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-0.1.4-green") />
+  <img src="https://img.shields.io/badge/Version-0.1.5-green") />
   <img src="https://img.shields.io/badge/nixpkgs-unstable-%237f7efe") />
   <img src="https://img.shields.io/badge/Licence-MIT-blue") />
 </p>
